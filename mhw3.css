@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+    color: darkcyan;
+    font-size: 1.2em;
+    background-color: rgb(167, 211, 196);
+    
+}
+
+@media (max-width: 500px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+
+
+header{
+    height: 500px;
+    color: rgb(218, 209, 209);
+    background-image: url("https://www.smartworld.it/wp-content/uploads/mobile/2020/12/videogiochi-final.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex; 
+    flex-direction: column;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+@media (max-width: 500px) {
+    header {
+      height: 300px;
+      line-height: 1.2;
+    }
+  }
+  
+
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+header h1 strong{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+
+}
+
+@media (max-width: 500px) {
+    header h1 strong {
+      font-size: 1em;
+      letter-spacing: 3px;
+    }
+  }
+
+
+#profilo{
+
+    position: absolute;
+    display:flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+    z-index:1;
+    flex-direction: row;
+
+}
+
+header img{
+
+border-top-right-radius: 50% 50%;
+border-top-left-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+max-width: 100px;
+max-height: 100px;
+position:absolute;
+}
+
+
+
+
+nav{
+
+    display: flex;
+    height: 60px;
+    background-color: rgb(28, 28, 61);
+    
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+#links a{
+    font-size: 20px;
+    margin: 30px;
+    border-radius: 50px;
+    padding: 5px 20px ;
+    background-color: darkgoldenrod;
+    color: white;
+    
+    
+}
+
+#links a:hover{
+    background-color: aliceblue;
+    color:gold
+}
+
+#menu {
+    display: none;
+  }
+  
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 500px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+  }
+  
+
+#par{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;  
+    align-items: center;
+    line-height: 40px;
+}
+
+
+
+#par img {
+   
+    margin-bottom: 100px;
+    width: 35%;
+    
+}
+
+#par strong{
+font-size: 35px;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(168, 29, 134);
+}
+
+
+.box  {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.box img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 35%;
+
+}
+
+@media (max-width: 500px) {
+.box img {
+
+     padding: 250px;;
+       width: 80%;
+
+    }
+
+}
+
+
+#par em{
+color: blue;
+border: 2px solid blueviolet;
+
+}
+
+
+#par p{
+  
+    width: auto;
+    padding:70px;
+    font-style: normal;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+
+@media (max-width: 500px) {
+    #par {
+       
+      flex-direction: column;
+    }
+
+    #par strong{
+        font-size: 18px;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    #par p {
+      margin-left: 1em;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 50%;
+      margin-bottom: 2em;
+      
+    }
+  }
+
+
+
+
+section{
+    
+    margin: 100px 125px;
+    text-align:center
+}
+
+
+
+  @media (max-width: 500px) {
+    section {
+      margin: 40px 10px  40px 10px;
+    }
+  }
+
+
+form{
+  width: 70%px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#results{
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+
+}
+
+.result_item{
+  width: 80%;
+  margin:10px 0px 10px 0px;
+  background-color:rgba(16, 105, 146, 0.795);
+  
+}
+
+.result_item h1 ,.result_item h3 {
+
+color: aliceblue;
+
+}
+
+
+footer{
+margin-top: 70px;
+color:white;
+text-align: center;
+letter-spacing: 2px;
+padding: 25px;
+height: 100px;
+background-color: rgb(28,28,61);
+
+}
+
+
+#fp{
+    color:goldenrod;
+    font-size: 30px;
+    word-spacing: 10px;
+}  
+
+
+
+
+
+
+
+
+
+
